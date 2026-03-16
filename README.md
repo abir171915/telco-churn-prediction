@@ -257,7 +257,7 @@ Streamlit              interactive UI consuming the API
 
 ## 👤 Author
 
-**Abir Faiyaz**
+**Md Abir Hossain**
 100 Days of Machine Learning — Day 6 Project
 
 ---
