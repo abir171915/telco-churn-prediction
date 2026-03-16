@@ -1,14 +1,17 @@
 import pickle
+import os
 import numpy as np
 import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
 
 # ── Load model and scaler once at startup ──
-with open("model/churn_model.pkl", "rb") as f:
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+with open(os.path.join(BASE_DIR, "model", "churn_model.pkl"), "rb") as f:
     model = pickle.load(f)
 
-with open("model/scaler.pkl", "rb") as f:
+with open(os.path.join(BASE_DIR, "model", "scaler.pkl"), "rb") as f:
     scaler = pickle.load(f)
 
 # ── Define the app ──
