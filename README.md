@@ -243,6 +243,9 @@ Streamlit              interactive UI consuming the API
 
 ---
 
+## 🌐 Live Demo
+Link: https://telco-churn-prediction.onrender.com/
+
 ## 🧠 What I Learned
 
 - Why **recall matters more than accuracy** for imbalanced classification problems
